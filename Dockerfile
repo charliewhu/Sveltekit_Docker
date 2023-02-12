@@ -15,5 +15,5 @@ COPY . /app/
 RUN pnpm build
 
 # expose port 3000 and run build
-EXPOSE 3000
-CMD ["node", "build"]
+#EXPOSE 3000
+#CMD ["node", "build"]

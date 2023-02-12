@@ -1,6 +1,7 @@
 .git
-node_modules
-.svelte-kit
+node_modules/
+build/
+.svelte-kit/
 .eslintignore
 .eslintrc.cjs
 .prettierignore
