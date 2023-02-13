@@ -1,6 +1,10 @@
+# docker-compose -f docker-compose.dev.yaml up --build
+
 version: '3.8'
 services:
   web:
+    env_file:
+      - .env
     build: .
     command: pnpm dev --host
     volumes:

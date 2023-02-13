@@ -1,8 +1,10 @@
 version: '3.8'
 services:
   svelte:
+    env_file:
+      - .env
     build: .
-    command: node build
+    command: node -r dotenv/config build
     ports:
       - 81:3000
 
